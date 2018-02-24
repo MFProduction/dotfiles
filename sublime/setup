@@ -1,0 +1,13 @@
+#!/bin/sh
+# Thanks to https://github.com/4lejandrito/dotfiles
+# Setup a machine for Sublime Text 2
+set -x
+
+# symlink settings in
+sublime_dir=$HOME/.config/sublime-text-3/Packages
+mv "$sublime_dir/User" "$sublime_dir/User.backup"
+ln -s "$DOT/sublime/User" "$sublime_dir"
+
+# Grab the Soda theme
+cd "$sublime_dir"
+git clone https://github.com/buymeasoda/soda-theme/ "Theme - Soda"

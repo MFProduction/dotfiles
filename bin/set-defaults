@@ -1,5 +1,4 @@
 #!/bin/sh
 #
-# Sets macOS defaults by running $ZSH/macos/set-defaults.sh.
-
-exec $ZSH/macos/set-defaults.sh
+# Sets Ubuntu defaults by running $DOT/ubuntu/set-defaults.sh.
+exec $DOT/ubuntu/set-defaults.sh

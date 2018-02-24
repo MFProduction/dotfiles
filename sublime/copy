@@ -1,0 +1,7 @@
+#!/bin/sh
+# Thanks to https://github.com/4lejandrito/dotfiles
+# Since Sublime is fucking insane and can't handle symlinks for the User
+# directory, we'll need to manually copy stuff over.
+
+rm -rf $DOT/sublime/User
+cp -R $HOME/.config/sublime-text-3/Packages/User $DOT/sublime/User

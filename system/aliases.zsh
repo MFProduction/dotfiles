@@ -1,10 +1,12 @@
-# grc overides for ls
-#   Made possible through contributions from generous benefactors like
-#   `brew install coreutils`
-if $(gls &>/dev/null)
-then
-  alias ls="gls -F --color"
-  alias l="gls -lAh --color"
-  alias ll="gls -l --color"
-  alias la='gls -A --color'
-fi
+alias h="history"
+alias j="jobs -l"
+alias xs='cd'
+alias vf='cd'
+alias moer='more'
+alias moew='more'
+alias kk='ll'
+alias chmodx='sudo chmod +x $@'
+cdl() { cd "$@" && ls; }
+alias C='| grep xargs cat'
+
+alias getip='wget http://ipinfo.io/ip -qO -'
