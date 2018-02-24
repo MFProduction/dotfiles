@@ -16,7 +16,7 @@ export AWS_DEFAULT_PROFILE=dlabs
 # Projects folder so that we can `c [tab]` to
 export PROJECT_PATHS=~/dev
 mkdir -p $PROJECT_PATHS
-ln -snf $DOTFILES $PROJECT_PATHS/dotfiles
+ln -snf $DOT $PROJECT_PATHS/dotfiles
 
 # Dlabs projects
 export DLABS_PATH=$PROJECT_PATHS/dlabs
