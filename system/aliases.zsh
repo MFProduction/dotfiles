@@ -9,4 +9,4 @@ alias chmodx='sudo chmod +x $@'
 cdl() { cd "$@" && ls; }
 alias C='| grep xargs cat'
 
-alias getip='wget http://ipinfo.io/ip -qO -'
+alias get-ip='wget http://ipinfo.io/ip -qO -'
