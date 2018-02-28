@@ -4,11 +4,13 @@ export ZSH=$HOME/.oh-my-zsh
 export DOT=$HOME/.dotfiles
 
 ZSH_THEME="devops"
-plugins=(alias-tips git aws bower bundler common-aliases docker gem rails sublime sudo systemd wd)
+plugins=(alias-tips git aws bower bundler common-aliases docker gem rails sublime sudo systemd wd colored-man-pages )
+
 # LEGACY#
 #export LocalSettings=$HOME/dotfiles-old
 # source $LocalSettings/zsh/aliases
 # source $LocalSettings/zsh/exports
+
 source $ZSH/oh-my-zsh.sh
 export AWS_DEFAULT_PROFILE=dlabs
 
@@ -59,9 +61,9 @@ unset config_files
 
 # Better history
 # Credits to https://coderwall.com/p/jpj_6q/zsh-better-history-searching-with-arrow-keys
-autoload -U up-line-or-beginning-search
-autoload -U down-line-or-beginning-search
-zle -N up-line-or-beginning-search
-zle -N down-line-or-beginning-search
-bindkey "^[[A" up-line-or-beginning-search # Up
-bindkey "^[[B" down-line-or-beginning-search # Down
+#autoload -U up-line-or-beginning-search
+#autoload -U down-line-or-beginning-search
+#zle -N up-line-or-beginning-search
+#zle -N down-line-or-beginning-search
+#bindkey "^[[A" up-line-or-beginning-search # Up
+#bindkey "^[[B" down-line-or-beginning-search # Down
