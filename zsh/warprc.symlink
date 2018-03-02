@@ -19,3 +19,4 @@ digitext:~/dev/dlabs/pamoja-ecosystem/workspace/pamoja-digitext
 pamoja-docker:~/dev/dlabs/pamoja-ecosystem
 pamoja-e2e:~/dev/dlabs/pamoja-ecosystem/workspace/pamoja-e2etests
 ringmaster:~/dev/dlabs/ringmaster
+dotfiles:~/.dotfiles
