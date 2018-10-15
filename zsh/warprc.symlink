@@ -20,3 +20,6 @@ pamoja-docker:~/dev/dlabs/pamoja-ecosystem
 pamoja-e2e:~/dev/dlabs/pamoja-ecosystem/workspace/pamoja-e2etests
 ringmaster:~/dev/dlabs/ringmaster
 dotfiles:~/.dotfiles
+pamoja-dash:~/dev/dlabs/pamoja-ecosystem/workspace/pamoja-dash
+qwe:~/dev/dlabs/pamoja-ecosystem
+adida:~/dev/dlabs/adia-health/adia

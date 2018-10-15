@@ -70,3 +70,6 @@ zle -N up-line-or-beginning-search
 zle -N down-line-or-beginning-search
 bindkey "^[[A" up-line-or-beginning-search # Up
 bindkey "^[[B" down-line-or-beginning-search # Down
+
+source /etc/profile.d/rvm.sh
+export DATADOG_API_KEY=123

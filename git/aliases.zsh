@@ -7,6 +7,7 @@ then
 fi
 
 alias gri2='git rebase -i HEAD~2'
+alias gfix='git commit -m "f" && git rebase -i HEAD~2'
 
 # The rest of my fun git aliases
 # alias gl='git pull --prune'

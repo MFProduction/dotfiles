@@ -9,3 +9,4 @@ mkc () {
 alias mcd="mkc"
 alias cmkdir="mkc"
 alias mkdirc="mkc"
+alias generate_password="date +%s | sha256sum | base64 | head -c 32 ; echo"
