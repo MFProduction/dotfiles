@@ -23,3 +23,5 @@ dotfiles:~/.dotfiles
 pamoja-dash:~/dev/dlabs/pamoja-ecosystem/workspace/pamoja-dash
 qwe:~/dev/dlabs/pamoja-ecosystem
 adida:~/dev/dlabs/adia-health/adia
+terraform-iac:~/dev/dlabs/terraform-iac
+mungoparc:~/dev/dlabs/mungoparc

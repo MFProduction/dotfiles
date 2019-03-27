@@ -2,20 +2,24 @@
 	"added_words":
 	[
 		"anonymize",
-		"pamojaeducation"
+		"pamojaeducation",
+		"dlabs",
+		"loadbalancer",
+		"autoscaling"
 	],
-	"auto_complete": true,
+	"auto_complete": false,
 	"auto_complete_commit_on_tab": true,
 	"bold_folder_labels": true,
 	"color_scheme": "Packages/User/SublimeLinter/fox.dark (SL).tmTheme",
 	"copy_with_empty_selection": true,
 	"dpi_scale": 1.5,
 	"ensure_newline_at_eof_on_save": true,
-	"font_size": 10,
+	"font_size": 14,
 	"highlight_line": true,
 	"hot_exit": false,
 	"ignored_packages":
 	[
+		"Markdown",
 		"Vintage"
 	],
 	"index_files": true,
