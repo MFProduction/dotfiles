@@ -2,6 +2,8 @@
 
 alias terraform-fmt='terraform fmt -check=true -write=false -diff=true'
 
+alias tgi='terragrunt init'
+alias tgv='terragrunt validate'
 alias tgp='terragrunt plan'
 alias tgpl='terragrunt plan | landscape'
 alias tga='terragrunt apply'
