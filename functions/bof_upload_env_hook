@@ -1,0 +1,25 @@
+#!/bin/bash
+
+script_path=$1
+pipeline_name=$2
+
+usage (){
+  echo "usage: upload_env_hook relative_path_to_script pipeline_name"
+  exit 1
+}
+
+if [ -z $script_path ]; then
+  usage
+fi
+if [ -z $pipeline_name ]; then
+  usage
+fi
+
+secret_bucket_default="buildkite-managedsecretsbucket-1doq4c4vu7rk7"
+secret_bucket_management="buildkite-management-managedsecretsbucket-1btnzkn6xz62r"
+secret_bucket_priority="buildkite-priority-queue-managedsecretsbucket-1pg2hgbjuhskf"
+
+for bucket in $secret_bucket_default $secret_bucket_management $secret_bucket_priority; do
+  echo "Uploading script $script_path to $bucket/$pipeline_name/env"
+  aws s3 cp $script_path s3://$bucket/$pipeline_name/env --sse AES256
+done

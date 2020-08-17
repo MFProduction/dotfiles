@@ -7,12 +7,7 @@ ZSH_THEME="devops"
 
 ## Install plugins
 # https://github.com/paulirish/git-open
-plugins=(alias-tips git aws bower bundler common-aliases docker gem rails sublime sudo systemd wd colored-man-pages git-open)
-
-# LEGACY#
-#export LocalSettings=$HOME/dotfiles-old
-# source $LocalSettings/zsh/aliases
-# source $LocalSettings/zsh/exports
+plugins=(alias-tips git aws common-aliases docker gem rails sudo systemd wd colored-man-pages git-open helm kubectl minicube colorize copybuffer copydir copyfile safe-paste systemadmin vault)
 
 source $ZSH/oh-my-zsh.sh
 export AWS_DEFAULT_PROFILE=dlabs
@@ -72,4 +67,8 @@ bindkey "^[[A" up-line-or-beginning-search # Up
 bindkey "^[[B" down-line-or-beginning-search # Down
 
 source /etc/profile.d/rvm.sh
-export DATADOG_API_KEY=123
+export PATH="$HOME/.tfenv/bin:$PATH"
+export PATH="$HOME/.tgenv/bin:$PATH"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[[ /usr/local/bin/kubectl ]] && source <(kubectl completion zsh)

@@ -31,8 +31,11 @@
         #
         # Setting to git 2.0 default to suppress warning message
         default = simple
+	followTags = true
 [user]
 	signingkey = 1321EDA8E41DB49F
+	email = matej.ferenc@dlabs.si
+	name = matej ferenc
 [comit]
 	gpgsign = true
 [commit]
